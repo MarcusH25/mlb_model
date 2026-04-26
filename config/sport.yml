@@ -1,0 +1,6 @@
+sport:
+  league: MLB
+  seasons: [2021, 2022, 2023, 2024, 2025]
+  rolling_windows: [10, 20, 30]
+  min_games_for_features: 15
+  predict_date: "2024-07-01"

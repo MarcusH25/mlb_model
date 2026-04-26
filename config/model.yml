@@ -1,0 +1,21 @@
+project:
+  directory: .
+  random_seed: 42
+
+data:
+  target: home_team_won
+  features_to_drop:
+    - date
+    - home_team
+    - away_team
+    - home_score
+    - away_score
+    - home_sp_id
+    - away_sp_id
+  include_closing_line: false
+
+model:
+  algorithms: [logreg, xgb]
+  cv_strategy: time_series
+  cv_splits: 5
+  scoring: neg_log_loss
